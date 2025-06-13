@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Notes app backend with NestJS and MongoDB",
  "scripts": {
-  "prebuild": "chmod +x ./node_modules/.bin/nest",
-  "build": "npx nest build",
   "start": "npx nest start",
-  "start:dev": "npx nest start --watch"
+  "start:dev": "npx nest start --watch",
+  "start:prod": "node dist/main.js",
+  "prebuild": "chmod +x ./node_modules/.bin/nest",
+  "build": "npx nest build"
 },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
